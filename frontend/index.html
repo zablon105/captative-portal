@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SwiftNet 5G Fiber Hotspot | Captive Portal Sign In</title>
+    <!-- Tailwind CSS v3 with Forms & Container Queries -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Google Fonts: Plus Jakarta Sans for crisp modern UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script data-purpose="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#eef2ff',
+                100: '#e0e7ff',
+                500: '#4f46e5',
+                600: '#4338ca',
+                700: '#3730a3',
+                900: '#1e1b4b',
+                dark: '#0c0e1a',
+              },
+              safaricom: {
+                DEFAULT: '#00a651',
+                dark: '#008541',
+                light: '#e8f7ee',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style data-purpose="custom-layout">
+      body {
+        background-color: #0b0f19;
+        color: #f1f5f9;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .glass-card {
+        background: rgba(22, 28, 45, 0.78);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-subtle {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .glow-cyan {
+        box-shadow: 0 0 24px -4px rgba(56, 189, 248, 0.25);
+      }
+      .glow-green {
+        box-shadow: 0 4px 18px -2px rgba(0, 166, 81, 0.35);
+      }
+      /* Hide scrollbars for clean tab bar */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen antialiased bg-[#0b0f19] text-[#f1f5f9] flex flex-col items-center justify-start">
+    <div id="root" class="w-full flex justify-center flex-1"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
